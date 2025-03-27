@@ -25,6 +25,7 @@ export default function Navbar() {
           <Link to="/programs" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Programs</Link>
           <Link to="/get-involved" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Get Involved</Link>
           <Link to="/rulesregulations" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Rules and Regulations</Link>
+          <Link to="/members" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Members</Link>
           <Link to="/contact" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Contact us</Link>
         </div>
 
