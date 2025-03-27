@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Modern icons
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="bg-white/80 backdrop-blur-lg text-blue-950 p-4 sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,9 +26,6 @@ export default function Navbar() {
           <Link to="/get-involved" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Get Involved</Link>
           <Link to="/rulesregulations" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Rules and Regulations</Link>
           <Link to="/contact" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Contact us</Link>
-          
-      
-          
         </div>
 
         {/* Mobile Menu Button */}
@@ -50,7 +47,7 @@ export default function Navbar() {
           <Link to="/get-involved" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Get Involved</Link>
           <Link to="/rulesregulations" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Rules and Regulations</Link>
           <Link to="/contact" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Contact us</Link>
-          
+  
         </div>
       )}
     </nav>
