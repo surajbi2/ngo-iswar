@@ -5,6 +5,18 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const NavLink = ({ to, children }) => (
+    <Link
+      to={to}
+      className="relative font-medium text-blue-950 transition-all duration-300 group"
+    >
+      <span className="relative">
+        {children}
+        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-900 transition-all duration-300 group-hover:w-full"></span>
+      </span>
+    </Link>
+  );
+
   return (
     <nav className="bg-white/80 backdrop-blur-lg text-blue-950 p-4 sticky top-0 z-50 shadow-md">
       <div className="mx-auto flex justify-between items-center">
@@ -19,14 +31,14 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Home</Link>
-          <Link to="/about" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">About Us</Link>
-          <Link to="/objectives" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Objectives</Link>
-          <Link to="/programs" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Programs</Link>
-          <Link to="/get-involved" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Get Involved</Link>
-          <Link to="/rulesregulations" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Rules and Regulations</Link>
-          <Link to="/members" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Members</Link>
-          <Link to="/contact" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Contact us</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About Us</NavLink>
+          <NavLink to="/objectives">Objectives</NavLink>
+          <NavLink to="/programs">Programs</NavLink>
+          <NavLink to="/get-involved">Get Involved</NavLink>
+          <NavLink to="/rulesregulations">Rules and Regulations</NavLink>
+          <NavLink to="/members">Members</NavLink>
+          <NavLink to="/contact">Contact us</NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -41,14 +53,14 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white py-4 space-y-4 shadow-lg">
-          <Link to="/" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Home</Link>
-          <Link to="/about" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">About Us</Link>
-          <Link to="/objectives" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Objectives</Link>
-          <Link to="/programs" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Programs</Link>
-          <Link to="/get-involved" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Get Involved</Link>
-          <Link to="/rulesregulations" className="text-lg text-[#1E3A8A] hover:text-black transition-all duration-300 font-medium">Rules and Regulations</Link>
-          <Link to="/contact" className="hover:text-[#1E3A8A] transition-all duration-300 font-medium">Contact us</Link>
-  
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About Us</NavLink>
+          <NavLink to="/objectives">Objectives</NavLink>
+          <NavLink to="/programs">Programs</NavLink>
+          <NavLink to="/get-involved">Get Involved</NavLink>
+          <NavLink to="/rulesregulations">Rules and Regulations</NavLink>
+          <NavLink to="/members">Members</NavLink>
+          <NavLink to="/contact">Contact us</NavLink>
         </div>
       )}
     </nav>

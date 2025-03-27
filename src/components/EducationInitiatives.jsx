@@ -47,7 +47,7 @@ export default function EducationInitiatives() {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.6,
-                delay: index * 0.3, // staggered effect
+                delay: index * 0.3, 
               }}
             >
               {item.icon}
