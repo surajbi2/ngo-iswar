@@ -14,6 +14,7 @@ import WomenChildWelfare from './components/WomenChildWelfare'
 import SkillDevelopment from './components/SkillDevelopment'
 import SocialUpliftment from './components/SocialUpliftment'
 import TribalRuralDevelopment from './components/TribalRuralDevelopment'
+import Members from './pages/Members'
 export default function App() {
   return (
     <Router>
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/objectives" element={<Objectives />} />
             <Route path="/rulesregulations" element={<RulesRegulations />} />
+            <Route path="/members" element={<Members />} />
           </Routes>
         </main>
         <Footer />
