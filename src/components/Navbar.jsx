@@ -35,9 +35,11 @@ export default function Navbar() {
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/objectives">Objectives</NavLink>
           <NavLink to="/programs">Programs</NavLink>
+
           <NavLink to="/get-involved">Get Involved</NavLink>
           <NavLink to="/rulesregulations">Rules and Regulations</NavLink>
-          <NavLink to="/members">Members</NavLink>
+          <NavLink to="/advisory-board">Advisory Board</NavLink>
+          {/* <NavLink to="/members">Members</NavLink> */}
           <NavLink to="/contact">Contact us</NavLink>
         </div>
 
@@ -57,6 +59,8 @@ export default function Navbar() {
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/objectives">Objectives</NavLink>
           <NavLink to="/programs">Programs</NavLink>
+          
+<NavLink to="/advisory-board">Advisory Board</NavLink>
           <NavLink to="/get-involved">Get Involved</NavLink>
           <NavLink to="/rulesregulations">Rules and Regulations</NavLink>
           <NavLink to="/members">Members</NavLink>

@@ -15,6 +15,8 @@ import SkillDevelopment from './components/SkillDevelopment'
 import SocialUpliftment from './components/SocialUpliftment'
 import TribalRuralDevelopment from './components/TribalRuralDevelopment'
 import Members from './pages/Members'
+import AdvisoryBoard from './pages/AdvisoryBoard'
+
 export default function App() {
   return (
     <Router>
@@ -36,6 +38,7 @@ export default function App() {
             <Route path="/objectives" element={<Objectives />} />
             <Route path="/rulesregulations" element={<RulesRegulations />} />
             <Route path="/members" element={<Members />} />
+            <Route path="/advisory-board" element={<AdvisoryBoard />} />
           </Routes>
         </main>
         <Footer />
